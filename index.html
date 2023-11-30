@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunrise and Sunset</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchedLocationValue"
+          placeholder="Enter location"
+        />
+        <button onclick="handleLocationSearch()">Search</button>
+      </div>
+
+      <div class="location-info">
+        <h2 id="todayLocationHeading">
+          <span id="searchLocation"></span> Region Today's Sunrise & Sunset
+        </h2>
+        <p class="inner-heading">
+          <span id="searchLocation"></span> Today's Date:
+          <span id="todayDate"></span>
+        </p>
+        <div>
+          <h3 class="ss">Sunrise and Sunset</h3>
+          <p>Sunrise: <span id="todaySunriseText"></span></p>
+          <p>Sunset: <span id="todaySunsetText"></span></p>
+          <p>DawnTime: <span id="todayDawnText"></span></p>
+          <p>DuskTime: <span id="todayDuskText"></span></p>
+          <p>Day Length: <span id="todayDayLengthText"></span></p>
+          <p>Solar Noon: <span id="todaySolarNoonText"></span></p>
+          <p>Time Zone: <span id="todayTimeZoneText"></span></p>
+          <p>Golden Hour: <span id="todayGoldenHour"></span></p>
+        </div>
+        <!-- Present-day additional information -->
+
+        <h2 id="tomorrowLocationHeading">
+          <span id="searchLocation"></span> Region Tomorrow's Sunrise & Sunset
+        </h2>
+        <p>
+          <span id="searchLocation"></span> Tomorrow's Date:
+          <span id="tomorrowDate"></span>
+        </p>
+        <div>
+          <h3 class="ss">Sunrise and Sunset</h3>
+          <p>Sunrise: <span id="tomorrowSunriseText"></span></p>
+          <p>Sunset: <span id="tomorrowSunsetText"></span></p>
+          <p>DawnTime: <span id="tomorrowDawnText"></span></p>
+          <p>DuskTime: <span id="tomorrowDuskText"></span></p>
+          <p>Day Length: <span id="tomorrowDayLengthText"></span></p>
+          <p>Solar Noon: <span id="tomorrowSolarNoonText"></span></p>
+          <p>Time Zone: <span id="tomorrowTimeZoneText"></span></p>
+          <p>Golden Hour: <span id="tomorrowGoldenHour"></span></p>
+        </div>
+        <!-- additional information for tomorrow -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

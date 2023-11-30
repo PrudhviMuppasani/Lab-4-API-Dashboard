@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+    background-image: url(./img/background_image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+}
+
+.mainContainer {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+/* Styles for the search container */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 0, 0.19); /* Adjust to your desired background color */
+    padding: 20px; /* Adjust padding as needed for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+
+    /* Responsive adjustments */
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-container input[type="text"] {
+    padding: 12px;
+    font-size: 18px;
+    width: calc(100% - 40px); /* Adjust width considering padding */
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Add border for input */
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(100, 208, 255);
+    border: none;
+    border-radius: 4px;
+    background-color: #333; /* Adjust button background color */
+    color: #fff; /* Adjust button text color */
+}
+
+/* Styles for the location info */
+.location-info {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #811313;
+    border-radius: 8px;
+    background-color: rgba(247, 247, 0, 0.653); /* Adjust to your desired background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.location-info h2 {
+    text-align: center;
+}
+
+.location-info div {
+    margin-top: 20px;
+}
+
+.location-info h3 {
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+
+#todayLocationHeading, #tomorrowLocationHeading {
+    font-size: 1.8rem;
+}
+
+.ss {
+    font-size: 1.8rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .search-container input[type="text"] {
+        font-size: 16px;
+    }
+    
+    .search-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .location-info {
+        padding: 15px;
+    }
+
+    #todayLocationHeading, #tomorrowLocationHeading {
+        font-size: 1.5rem;
+    }
+
+    .ss {
+        font-size: 1.5rem;
+    }
+
+    .location-info p {
+        font-size: 1rem;
+    }
+}
+ 
